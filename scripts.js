@@ -57,3 +57,15 @@ if (contactForm && statusDiv) {
     }
   });
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.querySelector(".mobile-toggle");
+  const menu = document.getElementById("menu");
+
+  toggleBtn.addEventListener("click", function () {
+    const isExpanded = toggleBtn.getAttribute("aria-expanded") === "true";
+    toggleBtn.setAttribute("aria-expanded", !isExpanded);
+    menu.classList.toggle("active");
+  });
+});
