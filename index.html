@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+		rel="stylesheet">
+	<link rel="icon" type="image/jpg" href="imgs/github-header-image.png">
+	<link rel="stylesheet" href="styles.css">
+	<!-- EmailJS SDK -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script>
+		(function () { emailjs.init('HRhdBInC1VPUS8OVE'); })();
+	</script>
+	<script src="scripts.js" defer></script>
+
+	<style>
+		.sr-only {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			padding: 0;
+			margin: -1px;
+			overflow: hidden;
+			clip: rect(0, 0, 0, 0);
+			white-space: nowrap;
+			border: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<a href="#" class="logo-holder">
+			<div class="logo">S</div>
+			<div class="logo-text">My Portfolio</div>
+		</a>
+		<nav>
+			<ul id="menu">
+				<li>
+					<a href="#Home">Home</a>
+				</li>
+				<li>
+					<a href="#certifications">Certificate</a>
+				</li>
+
+				<li>
+					<a href="#skills">Skills</a>
+				</li>
+				<li>
+					<a href="#projects">Projects</a>
+				</li>
+				<li>
+					<a href="#contact" class="button">Contact Me</a>
+				</li>
+			</ul>
+			<button type="button" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+				onclick="toggleMobileMenu();">
+				<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+					viewBox="0 0 24 24">
+					<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10" />
+				</svg>
+			</button>
+		</nav>
+	</header>
+	<main>
+		<!-- Hero Section -->
+		<section id="Home" class="hero container">
+			<div class="hero-blue">
+				<h1><small>Hi, I'm</small> Shalini Sharma</h1>
+				<p>
+					Web & Backend Developer from New Delhi, focused on scalable full-stack apps and intelligent
+					automation using JavaScript, Node.js, and Python.
+					<!-- <span>I explore cutting-edge AI topics like LangChain, RAG, and autonomous agents to solve real-world problems with automation and precision.</span> -->
+				</p>
+				<div class="call-to-action">
+					<a href="./shalini_cv(resume).pdf" class="button black" target="_blank">View Resume</a>
+					<a href="#contact" class="button yellow">Contact Me</a>
+				</div>
+				<div class="social-links">
+					<a href="https://github.com/shalini-413" target="_blank" rel="noopener noreferrer">
+						<img src="./images/github.png" alt="GitHub" width="48" loading="lazy">
+					</a>
+					<a href="https://www.linkedin.com/in/shalini-sharma-8b9b15200/" target="_blank"
+						rel="noopener noreferrer">
+						<img src="./images/linkedin.png" alt="LinkedIn" width="48" loading="lazy">
+					</a>
+				</div>
+			</div>
+			<div class="hero-yellow">
+				<picture>
+					<source srcset="./images/shalini.png" type="image/png">
+					<img src="./images/shalini.png" alt="Shalini" style="width:100%; height:auto;" loading="lazy">
+				</picture>
+			</div>
+		</section>
+		<!-- Technology Logos Marquee -->
+		<section class="logos container" aria-hidden="true">
+			<div class="marquee">
+				<ul class="track">
+
+					<img src="./images/mongo.png" alt="LinkedIn" width="128" height="130" lazy">
+					<img src="./images/nginx.png" alt="LinkedIn" width="188" height="110" lazy">
+					<img src="./images/git.png" alt="LinkedIn" width="128" height="110" lazy">
+					<img src="./images/htmlpng.png" alt="LinkedIn" width="128" height="130" lazy">
+					<img src="./images/react.png" alt="LinkedIn" width="128" height="130" loading="lazy">
+					<img src="./images/vite.png" alt="LinkedIn" width="157" height="125" loading="lazy">
+					<img src="./images/js.png" alt="LinkedIn" width="128" loading="lazy">
+					<img src="./images/CSS.png" alt="LinkedIn" width="108" height="130" loading="lazy">
+					<img src="./images/docker.png" alt="Docker" width="128" height="125" loading="lazy">
+					<img src="./images/node.png" alt="Docker" width="128" height="125" loading="lazy">
+					<img src="./images/mysql.png" alt="MySQL" width="150" height="125" loading="lazy">
+					<img src="./images/python.png" alt="Python" width="128" loading="lazy">
+					<img src="./images/github.png" alt="GitHub" width="128" loading="lazy">
+					<img src="./images/vscode.png" alt="VS Code" width="128" loading="lazy">
+					<img src="./images/linkedin.png" alt="LinkedIn" width="128" loading="lazy">
+
+
+					<img src="./images/docker.png" alt="Docker" width="128" loading="lazy">
+					<img src="./images/mysql.png" alt="MySQL" width="128" loading="lazy">
+					<img src="./images/python.png" alt="Python" width="128" loading="lazy">
+					<img src="./images/github.png" alt="GitHub" width="128" loading="lazy">
+					<img src="./images/vscode.png" alt="VS Code" width="128" loading="lazy">
+					<img src="./images/linkedin.png" alt="LinkedIn" width="128" loading="lazy">
+				</ul>
+
+			</div>
+		</section>
+		<!-- About Me -->
+		<!-- <section id="About" class="About container">
+			<h2>About Me</h2>
+			<div class="right-column">
+				<img src="./images/banner.png" alt="Vishwajit Singh Profile Banner"
+					style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 20px; display: block; margin: 0 auto 2rem;"
+					loading="lazy" />
+				<p>
+					I'm passionate about building scalable full-stack applications and real-time intelligent systems
+					using the MERN stack. I enjoy solving complex problems and combining backend logic with clean,
+					responsive frontend design.I'm currently pursuing my MCA at CDAC, Noida (GGSIPU) and have a solid
+					academic background with a Bachelor's in Computer Science from Delhi University.
+					<br>As a freelancer, I’ve worked with global clients to deliver impactful solutions, and I also
+					founded Euphoric Coders Hub, a tech community where I collaborate, learn, and grow with like-minded
+					developers.
+
+					I'm always excited to take on new challenges, contribute to meaningful projects, and keep learning
+					in this fast-paced world of tech.
+				</p>
+				<ul class="key-stats">
+					<li><strong>Experience:</strong> Freelance Full Stack & Backend Development (Jan 2024 – Present)
+					</li>
+					<li><strong>Core Stack:</strong> JavaScript, React.js, Node.js, Express.js, MongoDB, Python</li>
+					<li><strong>Specialization:</strong> MCA in progress (CDAC Noida), focus on Full Stack, Backend &
+						Intelligent Systems</li>
+				</ul>
+
+			</div>
+		</section> -->
+
+		<!-- Certifications -->
+		<section id="certifications" class="certifications container">
+			<h2>🎓 Certifications</h2>
+			<div class="cert-flip-container">
+
+				<div class="cert-flip-card">
+					<div class="flip-inner">
+						<div class="flip-front">
+							<h3><img src="./images/IBM.svg" alt="IBM"> IBM SkillsBuild</h3>
+							<p>Web Development Fundamentals</p>
+						</div>
+						<div class="flip-back">
+							<a href="https://skillsbuild.org/certificate/web-development-fundamentals"
+								target="_blank">Verify</a>
+							<span>Issued: Jan 2025</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="cert-flip-card">
+					<div class="flip-inner">
+						<div class="flip-front">
+							<h3><img src="./images/udemy.png" alt="Udemy"> Udemy</h3>
+							<p>React JS: Beginner to Expert</p>
+						</div>
+						<div class="flip-back">
+							<a href="https://www.udemy.com/certificate/UC-REACT-123456/" target="_blank">Verify</a>
+							<span>Issued: Jan 2025</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="cert-flip-card">
+					<div class="flip-inner">
+						<div class="flip-front">
+							<h3><img src="./images/scaler.png" alt="Scaler"> Scaler Academy</h3>
+							<p>Node.js Fundamentals</p>
+						</div>
+						<div class="flip-back">
+							<a href="https://www.scaler.com/certificates/nodejs-course/123456"
+								target="_blank">Verify</a>
+							<span>Issued: Feb 2024</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="cert-flip-card">
+					<div class="flip-inner">
+						<div class="flip-front">
+							<h3><img src="./images/cert.jpg" alt="More"> More</h3>
+							<p>Additional Certifications</p>
+						</div>
+						<div class="flip-back">
+							<a href="https://drive.google.com/drive/folders/1q3SjGATXXztEfOE5r3ygPw16xVN_efDZ?usp=sharing"
+								target="_blank">Drive</a>
+							<span>View All</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+
+
+
+		<!-- Modern Experience Timeline -->
+		<section id="experience" class="modern-experience container">
+			<h2 class="section-title">Professional Experience</h2>
+			<div class="timeline-wrapper">
+
+				<!-- Timeline Item 1 -->
+				<div class="timeline-item left">
+					<div class="content">
+						<h3>Freelance Full Stack Developer</h3>
+						<p class="company">Remote • Jan 2024 – Present</p>
+						<p>Developing and deploying scalable full-stack apps for global clients using MERN, Docker, and
+							Nginx.</p>
+						<!-- <span class="icon">💻</span> -->
+					</div>
+				</div>
+
+				<!-- Timeline Item 2 -->
+				<!-- <div class="timeline-item right">
+		<div class="content">
+		  <h3>Intern – Network Security</h3>
+		  <p class="company">IGDTUW ISEA • Aug 2023 – Nov 2023</p>
+		  <p>Designed and implemented ML-based detection for Slowloris attacks using real-time traffic analytics.</p>
+		  <span class="icon">🔐</span>
+		</div>
+	  </div> -->
+
+				<!-- Timeline Item 3 -->
+				<div class="timeline-item right">
+					<div class="content">
+						<h3>Founder – Euphoric Coders Hub</h3>
+						<p class="company">Community Initiative • Jul 2022 – Present</p>
+						<p>Built and led a developer community focused on learning, mentorship, and collaborative
+							project building.</p>
+						<!-- <span class="icon">🌐</span> -->
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+
+
+
+		<!-- Technical Skills -->
+		<section id="skills" class="skills-glass container">
+			<h2 class="section-title">Technical Skills</h2>
+			<div class="skills-glass-wrapper">
+
+				<!-- Left Section -->
+				<div class="skills-glass-left">
+					<div class="glass-card">
+						<h3>Web & Backend Frameworks</h3>
+						<ul class="glass-pills">
+							<li><img src="./images/htmlpng.png" alt=""> HTML</li>
+							<li><img src="./images/CSS.png" alt=""> CSS</li>
+							<li><img src="./images/js.png" alt=""> JavaScript</li>
+							<li><img src="./images/react.png" alt=""> React.js</li>
+							<li><img src="./images/node.png" alt=""> Node.js</li>
+							<li><img src="./images/mysql.png" alt=""> MySQL</li>
+							<li><img src="./images/mongo.png" alt=""> MongoDB</li>
+							<li><img src="./images/nginx.png" alt=""> Nginx</li>
+							<li><img src="./images/linux.jfif" alt=""> Nginx</li>
+						</ul>
+					</div>
+					<div class="glass-card">
+						<h3>Tools & Platforms</h3>
+						<ul class="glass-pills">
+							<li><img src="./images/python.png" alt=""> Python</li>
+							<li><img src="./images/git.png" alt=""> Git & GitHub</li>
+							<li><img src="./images/vscode.png" alt=""> VS Code</li>
+							<li><img src="./images/docker.png" alt=""> Docker</li>
+							<li><img src="./images/linux.png" alt=""> Linux</li>
+							<li><img src="./images/webstorm.png" alt=""> WebStorm</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Right Section -->
+				<div class="skills-glass-right">
+					<div class="glass-card text">
+						<h3>🧠 About My Skills</h3>
+						<p>
+							I'm passionate about building scalable full-stack applications and real-time intelligent
+							systems using the MERN stack. I enjoy solving complex problems and combining backend logic
+							with clean, responsive frontend design.
+						</p>
+						<p>
+							I'm currently pursuing MCA at CDAC, Noida and hold a Bachelor's in CS from DU. I've worked
+							with global clients and founded Euphoric Coders Hub to collaborate and learn with developers
+							worldwide.
+						</p>
+						<ul class="glass-facts">
+							<li><strong>Experience:</strong> Freelance Full Stack & Backend Dev (Jan 2024 – Present)
+							</li>
+							<li><strong>Core Stack:</strong> JavaScript, React.js, Node.js, Express.js, MongoDB, Python
+							</li>
+							<li><strong>Specialization:</strong> Full Stack, Backend & Intelligent Systems</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+
+
+
+
+		<!-- Work Experience -->
+		<section class="work-experience container">
+			<h2 class="section-title">On-Going Projects</h2>
+
+			<div class="project-modern">
+
+				<!-- DevConnect -->
+				<div class="project glassy">
+					<img src="./images/dev.png" alt="DevConnect Project" class="project-icon" />
+					<div class="project-details">
+						<h3>👩‍💻 DevConnect Platform</h3>
+						<p><strong>DevConnect</strong> is a full-stack web app for developers to showcase portfolios and
+							share project suggestions with peers.</p>
+						<ul>
+							<li></li>User profiles with personalized portfolio cards</li>
+							<li>Suggestion system to share feedback and ideas</li>
+							<li>Built using React.js, Node.js, Express.js, and MongoDB</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Slowloris -->
+				<div class="project glassy">
+					<img src="./images/slow.png" alt="DDoS Project" class="project-icon" />
+					<div class="project-details">
+						<h3>🛡️ DDoS Slowloris Detection</h3>
+						<p><strong>DDoS Slowloris Detection</strong> is an ML-based system that detects and mitigates
+							Slowloris attacks in real-time.</p>
+						<ul>
+							<li>Feature extraction from raw packet-level data</li>
+							<li>Trained ML models for real-time threat classification</li>
+							<li>Built using Python, Scikit-learn, Pandas, and Flask</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- QuoteShare -->
+				<div class="project glassy">
+					<img src="./images/quote.jpg" alt="QuoteShare App" class="project-icon" />
+					<div class="project-details">
+						<h3>✨ QuoteShare Web App</h3>
+						<p><strong>QuoteShare</strong> is a MERN-based app for creating and sharing quotes with full
+							user auth and CRUD features.</p>
+						<ul>
+							<li>Secure authentication with JWT</li>
+							<li>Full CRUD functionality for quotes</li>
+							<li>Built with MongoDB, Express.js, React.js, and Node.j</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+
+		<!-- Projects Gallery -->
+		<!-- <section id="projects" class="projects-glass container">
+			<h2>Completed Projects</h2>
+			<div class="project-gallery">
+		  
+			  <a href="https://github.com/shalini-413/Virtual_Assistant" class="project-card large" target="_blank">
+				<img src="./images/virtual.png" alt="Pueblo Virtual Assistant" />
+				<div class="content">
+				  <h3>Pueblo – Virtual Assistant</h3>
+				  <p>Voice-controlled AI assistant built using vanilla HTML, CSS & JavaScript. Supports greeting, search, weather, and more.</p>
+				</div>
+			  </a>
+		  
+			  <a href="https://github.com/shalini-413/TIC-TAC-TOE" class="project-card" target="_blank">
+				<img src="./images/tic.png" alt="Tic Tac Toe Game" />
+				<div class="content">
+				  <h3>Tic Tac Toe Game</h3>
+				  <p>Classic Tic Tac Toe built with HTML, CSS & JavaScript featuring smooth UX and responsive design.</p>
+				</div>
+			  </a>
+		  
+			  <a href="https://github.com/shalini-413/cardProject" class="project-card tall" target="_blank">
+				<img src="./images/card.png" alt="HTML CSS Card Project" />
+				<div class="content">
+				  <h3>HTML & CSS Card Project</h3>
+				  <p>Responsive and visually appealing card layouts using Flexbox, gradients, shadows, and advanced CSS styling techniques.</p>
+				</div>
+			  </a>
+		  
+			  <a href="https://github.com/shalini-413/Beginner_Animation" class="project-card" target="_blank">
+				<img src="./images/car.png" alt="Interactive Animation Project" />
+				<div class="content">
+				  <h3>Interactive Animation Project</h3>
+				  <p>Fun JS-powered project inspired by Code with Harry! Features animations, shake effects, dynamic backgrounds, and sound playback on button click.</p>
+				</div>
+			  </a>
+		  
+			  <a href="https://github.com/VishuS1304/Interactive-Quiz" class="project-card" target="_blank">
+				<img src="./images/quiz.png" alt="Interactive Quiz Project" />
+				<div class="content">
+				  <h3>Interactive Quiz Project</h3>
+				  <p>A dynamic and fun quiz game that tests your knowledge with instant feedback, animations, and sound effects for an engaging experience.</p>
+				</div>
+			  </a>
+		  
+			  <a href="https://github.com/shalini-413?tab=repositories" class="project-card wide" target="_blank">
+				<img src="./images/images.png" alt="More Projects" />
+				<div class="content">
+				  <h3>Explore More Projects</h3>
+				  <p>Click here to explore all my public repositories and hands-on AI/ML experiments on GitHub.</p>
+				</div>
+			  </a>
+		  
+			</div>
+		  </section> -->
+
+
+
+		<section id="projects" class="bento container">
+			<h2>Completed Projects</h2>
+			<div class="bento-grid">
+
+				<a href="https://github.com/shalini-413/TIC-TAC-TOE" target="_blank" class="bento-item tall">
+					<img src="./images/tic.png" alt="Tic Tac Toe Game" />
+					<div class="bento-overlay">
+						<h3>Tic Tac Toe Game</h3>
+						<p>Classic Tic Tac Toe built with HTML, CSS & JS with responsive design.</p>
+					</div>
+				</a>
+				<a href="https://github.com/shalini-413/Virtual_Assistant" target="_blank" class="bento-item wide">
+					<img src="./images/virtual.png" alt="Pueblo Virtual Assistant" />
+					<div class="bento-overlay">
+						<h3>Virtual Assistant</h3>
+						<p>Voice-controlled AI assistant built using HTML, CSS & JS. Supports greeting, search, and
+							more.</p>
+					</div>
+				</a>
+
+
+				<a href="https://github.com/shalini-413?tab=repositories" target="_blank" class="bento-item tall">
+					<img src="./images/images.png" alt="More Projects" />
+					<div class="bento-overlay">
+						<h3>Explore More Projects</h3>
+						<p>Click here to explore my public repositories and AI/ML experiments.</p>
+					</div>
+				</a>
+				<a href="https://github.com/shalini-413/cardProject" target="_blank" class="bento-item wide">
+					<img src="./images/card.png" alt="Card Layout Project" />
+					<div class="bento-overlay">
+						<h3>HTML & CSS Card</h3>
+						<p>Visually appealing card layouts using Flexbox, gradients, shadows, and more.</p>
+					</div>
+				</a>
+
+				<a href="https://github.com/shalini-413/Beginner_Animation" target="_blank" class="bento-item wide">
+					<img src="./images/car.png" alt="Animation Project" />
+					<div class="bento-overlay">
+						<h3>Interactive Animation</h3>
+						<p>Fun JS-powered animations, shake effects, and sound playback on interaction.</p>
+					</div>
+				</a>
+
+				<a href="https://github.com/VishuS1304/Interactive-Quiz" target="_blank" class="bento-item wide">
+					<img src="./images/quiz.png" alt="Interactive Quiz Project" />
+					<div class="bento-overlay">
+						<h3>Interactive Quiz</h3>
+						<p>Dynamic quiz with instant feedback, animations, and sounds for engagement.</p>
+					</div>
+				</a>
+
+
+
+			</div>
+		</section>
+
+
+
+
+
+		<section class="chatbot container">
+			<h2>
+				<small>
+					Talk to me
+				</small>
+			</h2>
+			<div class="chatbot-blue">
+				<div class="chat-info">
+					<h3>CHATBOT</h3>
+					<p>I've put together a chatbox here which knows all my skills, work experience and has a copy of my
+						CV/Resume. You can use it to ask questions about me to get a better idea of who I am and what
+						I've done.</p>
+					<p>You can also download my resume here if you want to take a look at it. I'm currently looking for
+						a new opporunities so if you have a project you think I'd be a good fit for, please get in
+						touch!</p>
+					<a href="./shalini_cv(resume).pdf" class="button black">Download Resume</a>
+				</div>
+				<section class="chat-box">
+					<div>
+						<!-- ✅ Embedded Chatbot Iframe -->
+						<iframe src="https://www.chatbase.co/chatbot-iframe/J1Z4x8W5YNY27F4LsYAdB" width="100%"
+							height="500" frameborder="0"
+							style="border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1);"></iframe>
+					</div>
+				</section>
+
+			</div>
+		</section>
+
+		<div class="contact-section">
+			<div>
+				<img src="./images/contact.jpg" alt="">
+			</div>
+			<div id="contact" class="contact-form-container">
+				<h2>Contact Me</h2>
+				<form id="js-contact-form">
+					<label for="contact-name" class="sr-only">Your Name</label>
+					<input id="contact-name" type="text" name="user_name" placeholder="Your Name" required>
+
+					<label for="contact-email" class="sr-only">Your Email</label>
+					<input id="contact-email" type="email" name="user_email" placeholder="Your Email" required>
+
+					<label for="contact-suject" class="sr-only">Your Subject</label>
+					<input id="contact-subject" type="text" name="subject" placeholder="Subject" required>
+
+					<label for="contact-message" class="sr-only">Your Message</label>
+					<textarea id="contact-message" name="message" placeholder="Your Message" rows="4"
+						required></textarea>
+					<button type="submit">Send</button>
+					<div id="contact-status" aria-live="polite" style="margin-top:0.5rem;"></div>
+				</form>
+			</div>
+
+		</div>
+
+	</main>
+	<!-- ✅ Floating Chatbot Script -->
+	<!-- Floating Chatbot Script -->
+	<script>
+		window.chatbaseConfig = {
+			chatbotId: "J1Z4x8W5YNY27F4LsYAdB"
+		};
+	</script>
+	<script src="https://www.chatbase.co/embed.min.js" id="chatbase-script" defer></script>
+
+	<!-- Footer -->
+	<footer class="footer container">
+		<div class="footer-grid">
+		  
+		  <!-- About / Personal Intro -->
+		  <div class="footer-col">
+			<h3>About Me</h3>
+			<p>
+			  👋 I'm Shalini Sharma, a passionate full-stack developer focused on building elegant, scalable, and user-centric web apps.
+			</p>
+			<p>
+			  Open to freelance & remote opportunities.
+			</p>
+		  </div>
+	  
+		  <!-- Contact -->
+		  <div class="footer-col">
+			<h3>Get in Touch</h3>
+			<p>📍 New Delhi, India</p>
+			<p>📧 <a href="mailto:shalinishalu462002@gmail.com">shalinishalu462002@gmail.com</a></p>
+			<p>📞 <a href="tel:+91-9650578744">+91-9650578744</a></p>
+		  </div>
+	  
+		  <!-- Social -->
+		  <div class="footer-col">
+			<h3>Connect</h3>
+			<div class="social-icons">
+			  <a href="https://github.com/shalini-413" target="_blank" title="GitHub">
+				<img src="./images/github.png" alt="GitHub">
+			  </a>
+			  <a href="https://linkedin.com/in/shalini-sharma-8b9b15200" target="_blank" title="LinkedIn">
+				<img src="./images/linkedin.png" alt="LinkedIn">
+			  </a>
+			  <a href="https://instagram.com" target="_blank" title="Instagram">
+				<img src="./images/insta.avif" alt="Instagram">
+			  </a>
+			  <a href="https://twitter.com" target="_blank" title="Twitter">
+				<img src="./images/twitter.svg" alt="Twitter">
+			  </a>
+			</div>
+		  </div>
+	  
+		  <!-- Tech Stack -->
+		  <div class="footer-col">
+			<h3>Tech Stack</h3>
+			<div class="tech-icons">
+			  <img src="./images/htmlpng.png" alt="HTML">
+			  <img src="./images/css.png" alt="CSS">
+			  <img src="./images/js.png" alt="JavaScript">
+			  <img src="./images/react.png" alt="React">
+			  <img src="./images/node.png" alt="Node.js">
+			  <img src="./images/mongo.png" alt="MongoDB">
+			</div>
+		  </div>
+	  
+		</div>
+	  
+		<!-- Footer Bottom -->
+		<div class="footer-bottom">
+		  <p id="currentDateTime">Loading current time...</p>
+		  <p><a href="#top" class="scroll-top">⬆ Back to Top</a></p>
+		  <div class="footer-note">
+			Built with ❤️ by Shalini Sharma · © <span id="year"></span>
+		  </div>
+		</div>
+	  </footer>
+	  
+
+
+
+</body>
+
+</html>
+
+</body>
+
+</html>
